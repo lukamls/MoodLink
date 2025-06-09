@@ -1,4 +1,6 @@
 # Final project for ECE 284
+Code base explaination: The emotion detection pipeline is in the root directory, along with all three exported .onnx models of the trained versions of MobileNetV3-Large. A detailed description of the pipeline's code is in the comments of emotion_detection_pipeline.py.
+The directory Training_Scripts contains the training python scripts used for training MobileNetV3 and obtaining the .onnx files in the root directory. 
 
 # MoodLink Emotion Detection Pipeline
 
@@ -36,14 +38,14 @@ A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emo
    git clone https://github.com/yourusername/MoodLink.git
    cd MoodLink
 
-## Create Venv
+# Create Venv
 
 python -m venv venv
-# Windows
+## Windows
 venv\Scripts\activate
-# macOS/Linux
+## macOS/Linux
 source venv/bin/activate
 
-## Install Required Packages
+# Install Required Packages
 
 pip install numpy opencv-python mediapipe onnxruntime
