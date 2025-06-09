@@ -8,7 +8,7 @@ A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emo
 
 ---
 
-## 🔍 Features
+## Features
 
 - **Face alignment** using five key landmarks (eyes, nose, mouth)  
 - **Warp & crop** to a 256×256 “aligned” face  
@@ -22,7 +22,7 @@ A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emo
 
 ---
 
-## 🛠 Prerequisites
+## Prerequisites
 
 - **Python 3.7+**  
 - A working **webcam**  
@@ -31,10 +31,9 @@ A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emo
 
 ---
 
-## 📥 Installation
+## Installation
 
-1. Clone or download this repo:  
-   ```bash
+Clone or download this repo:  ```bash
    git clone https://github.com/yourusername/MoodLink.git
    cd MoodLink
 
