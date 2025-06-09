@@ -33,9 +33,13 @@ A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emo
 
 ## Installation
 
-Clone or download this repo:  ```bash
-   git clone https://github.com/yourusername/MoodLink.git
-   cd MoodLink
+### Clone the repository
+
+```bash
+# Clone the MoodLink repo and enter the directory
+git clone https://github.com/yourusername/MoodLink.git
+cd MoodLink
+
 
 # Create Venv
 
