@@ -1,8 +1,12 @@
-# Final project for ECE 284
+# MoodLink
+Mood Link is a real-time emotion recognition system. The goal was to develop a lightweight system recognizing emotions based on camera input. It uses MediaPipe FaceMesh for landmark extraction followed by pre-processing and MobileNetV3-Large to map the pre-processed image to an emotion. MobileNetV3-Large is can be chosen during runtime in 3 configurations: trained with FER-13 dataset, trained with RAF-DB dataset, and trained with a pre-processed version of the RAF-DB dataset.
+This was the final project for the class "ECE284 Mobile Health Design" at UC San Diego.
+
+# Code Base Explaination
 Code base explaination: The emotion detection pipeline is in the root directory, along with all three exported .onnx models of the trained versions of MobileNetV3-Large. A detailed description of the pipeline's code is in the comments of emotion_detection_pipeline.py.
 The directory Training_Scripts contains the training python scripts used for training MobileNetV3 and obtaining the .onnx files in the root directory. 
 
-# MoodLink Emotion Detection Pipeline
+# Emotion Detection Pipeline
 
 A simple, real-time demo that combines MediaPipe FaceMesh with a MobileNetV3 emotion classifier exported to ONNX. After detecting your facial landmarks via webcam, it aligns and crops each face, then feeds that patch into the ONNX model you choose—finally drawing both the aligned thumbnail and your predicted emotion back on the live video feed.
 
